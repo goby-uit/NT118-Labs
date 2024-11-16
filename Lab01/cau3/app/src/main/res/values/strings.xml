@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab1_C3</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="username">Username: </string>
+    <string name="password">Password: </string>
+    <string name="signup">SIGN UP</string>
+    <string name="viaFB">SIGN IN VIA FACEBOOK"</string>
+</resources>

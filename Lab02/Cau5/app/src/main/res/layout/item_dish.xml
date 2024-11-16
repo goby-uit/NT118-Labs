@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_dish"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/imageViewDish"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewDishName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:focusable="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true"
+            android:textColor="#000"
+            android:selectAllOnFocus="true"
+            android:textIsSelectable="true"
+            android:textSize="16sp" />
+        <ImageView
+            android:id="@+id/imageViewPromotion"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/star"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
