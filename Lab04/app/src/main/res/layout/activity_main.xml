@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--Todo: My name-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/my_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_size"
+            android:gravity="center"
+            android:background="@color/blue"
+            />
+        <!--Todo: ImageView UIT-->
+        <ImageView
+            android:id="@+id/uit_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/uit_image"
+            android:layout_margin="@dimen/margin_basex2"
+            android:layout_gravity="center"/>
+
+        <!--Todo: Linear Layout các button-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/margin_basex2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <!--todo: From XML-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/from_xml"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="@dimen/title_text"
+                    android:textColor="@color/black"
+                    android:textStyle="bold">
+                </TextView>
+                <!--todo: ScollView-->
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="ScrollViewCount">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/margin_basex2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <!--todo: Button Fade In-->
+                        <Button
+                            android:id="@+id/fade_in_xml"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fade_in"
+                            android:textSize="@dimen/text_medium"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/margin_base"
+                            android:background="@drawable/button_background"
+                            />
+                        <!--todo: Button Fade Out-->
+                        <Button
+                            android:id="@+id/fade_out_xml"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fade_out"
+                            android:textSize="@dimen/text_medium"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/margin_base"
+                            android:background="@drawable/button_background"
+                            />
+                        <!--todo: Button Blink-->
+                        <Button
+                            android:id="@+id/blink_xml"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/blink"
+                            android:textSize="@dimen/text_medium"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/margin_base"
+                            android:background="@drawable/button_background"
+                            />
+                        <!--todo: Button Zoom In-->
+                        <!--todo: Button Zoom Out-->
+                        <Button
+                            android:id="@+id/zoom_in_xml"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_base"
+                            android:background="@drawable/button_background"
+                            android:text="@string/zoom_in"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_medium" />
+
+                        <Button
+                            android:id="@+id/zoom_out_xml"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/zoom_out"
+                            android:textSize="@dimen/text_medium"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/margin_base"
+                            android:background="@drawable/button_background"/>
+                        <!--todo: Button Rotate-->
+                        <Button
+                            android:id="@+id/rotate_xml"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rotate"
+                            android:textSize="@dimen/text_medium"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/margin_base"
+                            android:background="@drawable/button_background"/>
+                        <!--todo: Button Move-->
+                        <Button
+                            android:id="@+id/move_xml"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/move"
+                            android:textSize="@dimen/text_medium"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/margin_base"
+                            android:background="@drawable/button_background"/>
+                        <!--todo: Button Slide Up-->
+                        <Button
+                            android:id="@+id/slide_up_xml"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/slide_up"
+                            android:textSize="@dimen/text_medium"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/margin_base"
+                            android:background="@drawable/button_background"/>
+                        <!--todo: Button Bounce-->
+                        <Button
+                            android:id="@+id/bounce_xml"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bounce"
+                            android:textSize="@dimen/text_medium"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/margin_base"
+                            android:background="@drawable/button_background"/>
+                        <!--todo: Button Combine-->
+                        <Button
+                            android:id="@+id/combine_xml"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/combine"
+                            android:textSize="@dimen/text_medium"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/margin_base"
+                            android:background="@drawable/button_background"/>
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+            <!--todo: From Code-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/from_code"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="@dimen/title_text"
+                    android:textColor="@color/black"
+                    android:textStyle="bold">
+                </TextView>
+                <!--todo: ScrollView-->
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="ScrollViewCount">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/margin_basex2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <!--todo: Button Fade In-->
+                        <Button
+                            android:id="@+id/fade_in_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fade_in"
+                            android:textSize="@dimen/text_medium"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/margin_base"
+                            android:background="@drawable/button_background"
+                            />
+                        <!--todo: Button Fade Out-->
+                        <Button
+                            android:id="@+id/fade_out_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fade_out"
+                            android:textSize="@dimen/text_medium"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/margin_base"
+                            android:background="@drawable/button_background"
+                            />
+                        <!--todo: Button Blink-->
+                        <Button
+                            android:id="@+id/blink_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/blink"
+                            android:textSize="@dimen/text_medium"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/margin_base"
+                            android:background="@drawable/button_background"
+                            />
+                        <!--todo: Button Zoom In-->
+                        <Button
+                            android:id="@+id/zoom_in_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/zoom_in"
+                            android:textSize="@dimen/text_medium"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/margin_base"
+                            android:background="@drawable/button_background"
+                            />
+                        <!--todo: Button Zoom Out-->
+                        <Button
+                            android:id="@+id/zoom_out_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/zoom_out"
+                            android:textSize="@dimen/text_medium"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/margin_base"
+                            android:background="@drawable/button_background"/>
+                        <!--todo: Button Rotate-->
+                        <Button
+                            android:id="@+id/rotate_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rotate"
+                            android:textSize="@dimen/text_medium"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/margin_base"
+                            android:background="@drawable/button_background"/>
+                        <!--todo: Button Move-->
+                        <Button
+                            android:id="@+id/move_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/move"
+                            android:textSize="@dimen/text_medium"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/margin_base"
+                            android:background="@drawable/button_background"/>
+                        <!--todo: Button Slide Up-->
+                        <Button
+                            android:id="@+id/slide_up_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/slide_up"
+                            android:textSize="@dimen/text_medium"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/margin_base"
+                            android:background="@drawable/button_background"/>
+                        <!--todo: Button Bounce-->
+                        <Button
+                            android:id="@+id/bounce_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bounce"
+                            android:textSize="@dimen/text_medium"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/margin_base"
+                            android:background="@drawable/button_background"/>
+                        <!--todo: Button Combine-->
+                        <Button
+                            android:id="@+id/combine_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/combine"
+                            android:textSize="@dimen/text_medium"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/margin_base"
+                            android:background="@drawable/button_background"/>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

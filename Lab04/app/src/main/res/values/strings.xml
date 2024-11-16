@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Lab04</string>
+    <dimen name="margin_base">5dp</dimen>
+    <dimen name="margin_basex2">10dp</dimen>"
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="image_base">100dp</dimen>
+    <dimen name="title_size">24sp</dimen>
+    <dimen name="title_text">20sp</dimen>
+
+    <string name="from_xml">From XML</string>
+    <string name="from_code">From CODE</string>
+    <string name="fade_in">Fade In</string>
+    <string name="fade_out">Fade Out</string>
+    <string name="blink">Blink</string>
+    <string name="zoom_in">Zoom In</string>
+    <string name="zoom_out">Zoom Out</string>
+    <string name="rotate">Rotate</string>
+    <string name="move">Move</string>
+    <string name="slide_up">Slide Up</string>
+    <string name="bounce">Bounce</string>
+    <string name="combine">Combine</string>
+    <string name="back">Back</string>
+    <string name="uit">University of Information Technology</string>
+    <string name="my_name">Tô Công Quân - 22521190</string>
+</resources>
